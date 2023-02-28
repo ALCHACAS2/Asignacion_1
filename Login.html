@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/LOGO.png" />
+  </head>
+  <body>
+    <form action="procesar_formulario.php" method="POST">
+      <nav>
+        <label>Usuario:</label>
+        <input
+          type="text"
+          id="usuario"
+          name="usuario"
+          placeholder="Introduce tu usuario..."
+          required
+        />
+        <br /><br />
+        <label>Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Introduce tu password..."
+          required
+        />
+        <br /><input type="submit" value="Ingresar" />
+        <input type="submit" value="Registrarse" />
+      </nav>
+    </form>
+  </body>
+</html>
