@@ -1,13 +1,13 @@
-h1 {
+/*h1 {
   font-size: 36px;
   color: #333;
   text-align: center;
 }
-
+*/
 body {
   margin: 0;
   background: linear-gradient(to left, #5a9e9b, #3a6664);
-}
+}/*
 
 .imagen-container {
   display: flex;
@@ -58,8 +58,8 @@ body {
     transform: rotate(-5deg);
   }
 }
-/*-----------------------Login---------------------*/
-/* Estilo para el formulario */
+/*-----------------------Login---------------------
+/* Estilo para el formulario 
 form {
   max-width: 450px;
   margin: 0 auto;
@@ -70,13 +70,13 @@ form {
   box-shadow: 0px 0px 1px #ee0606;
 }
 
-/* Estilo para las etiquetas de los campos */
+/* Estilo para las etiquetas de los campos 
 label {
   display: block;
   margin-bottom: 5px;
 }
 
-/* Estilo para los campos */
+/* Estilo para los campos 
 input[type="text"],
 input[type="password"] {
   width: 100%;
@@ -86,7 +86,7 @@ input[type="password"] {
   margin-bottom: 10px;
 }
 
-/* Estilo para el botón de enviar */
+/* Estilo para el botón de enviar 
 input[type="submit"] {
   align-self: center;
   background-color: #4caf50;
@@ -97,54 +97,54 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-/* Estilo para el botón de enviar al pasar el cursor encima */
+/* Estilo para el botón de enviar al pasar el cursor encima 
 input[type="submit"]:hover {
   background-color: #3e8e41;
 }
 
-/* Estilo para el mensaje de error */
+/* Estilo para el mensaje de error 
 #error {
   color: red;
   margin-bottom: 10px;
-}
+}*/
 /*DIV TOP*/
-#div1, #div2, #div3 {
+#div1,#div2,#div3 {
   width: 100%;
 }
 #div1 {
   background-color: #17232f;
-  height: 10vh;
+  height: 15vh;
 }
 #div2 {
-  background-color: #FFFFFF;
-  height: 8vh;
+  background-color: #ffffff;
+  height: 21vh;
   display: flex;
   justify-content: space-between;
 }
 #div3 {
   background-color: #17232f;
-  height: 25vh;
+  height: 64vh;
 }
 #div4 {
-  background-image: linear-gradient(to bottom, #0C0A0F, #48332E);
-  height: 100vh;
+  background-image: linear-gradient(to bottom, #0c0a0f, #48332e);
+  height: 179vh;
 }
 #div5 {
-  background-image: linear-gradient(to bottom, #223A46, #17232F);
+  background-image: linear-gradient(to bottom, #223a46, #17232f);
   position: absolute;
-  width: 86%;
-  height: 60%;
-  top: 25%;
-  left: 7%;
+  width: 79%;
+  height: 104%;
+  top: 42%;
+  left: 10%;
   z-index: 3;
 }
 #div6 {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   position: absolute;
-  width: 86%;
+  width: 79%;
   height: 40%;
-  top: 85%; 
-  left: 7%;
+  top: 145%;
+  left: 10%;
   z-index: 3;
 }
 .contenedor {
@@ -154,21 +154,27 @@ input[type="submit"]:hover {
 
 .elemento {
   flex: 1;
-  margin: 0% 10%; 
+  margin: 0% 10%;
   align-self: center;
 }
-.Circulo{
+.Circulo {
   align-self: center;
   width: 10vh;
   height: 50%;
   background-color: #f28e14;
   border-radius: 50%;
 }
-.ingreso{
+.ingreso {
   background-color: #f28e14;
   border-color: #f28e14;
   height: 50%;
   width: 50vh;
   align-self: center;
   -webkit-text-fill-color: white;
+}
+.titulo{
+  -webkit-text-fill-color: #000000;
+  font-size: 8em;
+  align-self: center;
+  top: 45%;
 }
