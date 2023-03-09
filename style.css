@@ -117,13 +117,19 @@ input[type="submit"]:hover {
 }
 #div2 {
   background-color: #FFFFFF;
-  height: 12vh;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
 }
 #div3 {
-  background-image: linear-gradient(to bottom, #0C0A0F, #48332E);
-  height: 30vh;
+  background-color: #17232f;
+  height: 25vh;
 }
 #div4 {
+  background-image: linear-gradient(to bottom, #0C0A0F, #48332E);
+  height: 100vh;
+}
+#div5 {
   background-image: linear-gradient(to bottom, #223A46, #17232F);
   position: absolute;
   width: 86%;
@@ -132,12 +138,37 @@ input[type="submit"]:hover {
   left: 7%;
   z-index: 3;
 }
-#div5 {
+#div6 {
   background-color: #FFFFFF;
   position: absolute;
   width: 86%;
-  height: 35%;
-  top: 85%;
+  height: 40%;
+  top: 85%; 
   left: 7%;
   z-index: 3;
+}
+.contenedor {
+  display: flex;
+  justify-content: center;
+}
+
+.elemento {
+  flex: 1;
+  margin: 0% 10%; 
+  align-self: center;
+}
+.Circulo{
+  align-self: center;
+  width: 10vh;
+  height: 50%;
+  background-color: #f28e14;
+  border-radius: 50%;
+}
+.ingreso{
+  background-color: #f28e14;
+  border-color: #f28e14;
+  height: 50%;
+  width: 50vh;
+  align-self: center;
+  -webkit-text-fill-color: white;
 }
