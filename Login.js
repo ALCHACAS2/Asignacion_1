@@ -9,6 +9,6 @@ function validarUsuario() {
   window.location.href = "index.html";
   return false;
 }
-function alerta(){
+function alerta() {
   alert("Bienvenido " + "a");
 }
