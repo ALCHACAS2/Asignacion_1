@@ -35,7 +35,7 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 5px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
@@ -107,7 +107,7 @@ input[type="submit"]:hover {
   color: red;
   margin-bottom: 10px;
 }*/
-/*DIV TOP*/
+/*DIV TOP
 #div1,#div2,#div3 {
   width: 100%;
 }
@@ -159,17 +159,18 @@ input[type="submit"]:hover {
 }
 .Circulo {
   align-self: center;
-  width: 10vh;
-  height: 50%;
+  width: 25vh;
+  height: 20%;
   background-color: #f28e14;
   border-radius: 50%;
 }
 .ingreso {
   background-color: #f28e14;
   border-color: #f28e14;
-  height: 50%;
-  width: 50vh;
+  height: 60%;
+  width: 55vh;
   align-self: center;
+  right: 20vh;
   -webkit-text-fill-color: white;
 }
 .titulo{
@@ -177,4 +178,56 @@ input[type="submit"]:hover {
   font-size: 8em;
   align-self: center;
   top: 45%;
+}*/
+/*--------------------------------------------------*/
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  height: 15vh;
+  background-color: #17232f;
+}
+
+.content {
+  height: 21vh;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: left;
+  padding-left: 32vh;
+  align-items: center ;
+}
+.circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 5vh;
+  height: 24%;
+  border-radius: 50%;
+  background-color: #f28e14;
+}
+.text{
+  text-decoration: underline;
+  text-underline-position: 5px;
+  margin: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+.text-title{
+  text-decoration: underline;
+  text-underline-position: 5px;
+  margin: 90px 90px;
+  flex-direction: column;
+  align-items: center;
+}
+.boton {
+  background-color: #f28e14;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin: 10px;
 }

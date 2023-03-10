@@ -12,3 +12,7 @@ function validarUsuario() {
 function alerta() {
   alert("Bienvenido " + "a");
 }
+function redirigirAIndex() {
+  window.location.href = 'index.html';
+}
+
