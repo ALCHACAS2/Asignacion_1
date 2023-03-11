@@ -16,3 +16,4 @@ function redirigirAIndex() {
   window.location.href = 'index.html';
 }
 
+
