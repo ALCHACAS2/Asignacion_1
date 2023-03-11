@@ -6,26 +6,83 @@
 */
 body {
   margin: 0;
-  background: linear-gradient(to left, #5a9e9b, #3a6664);
+  background: linear-gradient(to left, #000000, #000000);
   background-color: black;
 }
 
 .rectangulo {
-  left: 0;
-  width: 100%;
+  left: 20px; /* añadir un margen izquierdo */
+  width: calc(
+    100% - 40px
+  ); /* ajustar el ancho para evitar que el rectángulo se salga del borde derecho de la ventana */
   height: 70px;
   background-color: rgb(0, 0, 0);
   z-index: 3;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* alinear los elementos hacia la derecha */
 }
+
+.rectangulo-negro {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0.822);
+  display: flex;
+  align-items: center;
+  justify-content: center; /* alinear los elementos hacia la derecha */
+  padding: 0 20px;
+}
+
+.boton-gris {
+  background-color: rgb(95, 95, 95);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  margin: 0 20px;
+  width: 11%;
+}
+
+.boton-blanco {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-right: 10px; /* añadir un margen derecho */
+}
+
+.boton-carrito {
+  background-color: rgb(0, 0, 0);
+  color: rgb(213, 105, 16);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  margin: 0 5px;
+}
+
+.boton-ingresar {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  margin: 0 5px;
+  width: 20%;
+}
+
+
 
 .mi-clase {
   width: 100%;
   height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
+  position: relative;
 }
 
 .mi-clase img {
@@ -34,9 +91,18 @@ body {
   object-fit: cover;
 }
 
-.rectangle-container {
+.mi-clase .elemento-absoluto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  /* Agrega aquí cualquier otra propiedad que necesites para posicionar el elemento */
+}
+
+.mi-clase .rectangle-container {
   line-height: 100px;
-  top: 70%;
+  top: 60%;
+  bottom: 5%;
   margin-left: 3%;
   margin-right: 3%;
   font-size: 24px;
