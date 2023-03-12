@@ -1,0 +1,327 @@
+body {
+  margin: 0;
+}
+.boton {
+  background-color: #f28e14;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin: 10px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* add this line */
+  justify-content: left;
+  height: 100vh;
+}
+.header {
+  height: 15vh;
+  background-color: #17232f;
+}
+.content {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 25%;
+  height: 20vh;
+  align-self: center;
+}
+.content-color-one {
+  background-image: linear-gradient(to bottom, #223a46, #17232f);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 15%;
+  height: 35vh;
+}
+.content-color-two {
+  background-image: linear-gradient(to bottom, #0c0a0f, #48332e);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 15%;
+  height: 180vh;
+}
+.content-front {
+  background-image: linear-gradient(to bottom, #223a46, #17232f);
+  position: absolute;
+  width: 84%;
+  height: 110%;
+  top: 42%;
+  left: 8%;
+  z-index: 3;
+}
+.content-front-two {
+  background-color: #ffffff;
+  position: absolute;
+  width: 84%;
+  height: 80%;
+  top: 152%;
+  left: 8%;
+  z-index: 3;
+}
+
+.circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 5vh;
+  height: 24%;
+  border-radius: 50%;
+  background-color: #f28e14;
+}
+
+.text {
+  text-decoration: underline;
+  text-underline-position: 5px;
+  margin: 20px;
+  flex-direction: column;
+  align-items: center;
+  font-size: 15px;
+}
+.barra {
+  margin-left: 15%;
+  margin-right: 2%;
+}
+
+.text-title {
+  text-decoration: underline;
+  text-underline-position: 5px;
+  padding: 20px;
+  align-items: center;
+}
+.text-title-two {
+  margin-top: 10px;
+  margin-left: 8%;
+  margin-bottom: 0%;
+  padding: 30px;
+  color: #ffffff;
+  align-items: center;
+  font-size: 100px;
+}
+
+.text-under-title {
+  flex-direction: column;
+  margin-left: -150px;
+  margin-bottom: -50px;
+}
+.first-input {
+  padding: 10px;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+}
+.input {
+  height: 30px;
+  margin-top: 1%;
+  margin-left: 20%;
+  margin-right: 5%;
+  border-radius: 10px;
+  border-width: 0px;
+  padding: 30px;
+  font-size: 45px;
+}
+.input-text {
+  display: flex;
+  margin-top: 6%;
+  margin-right: 0%;
+  margin-left: 10%;
+  width: 140%;
+  padding: 15px;
+  color: white;
+  font-size: 30px;
+}
+.container-info {
+  align-self: center;
+  margin: 0vh 20vh 0vh 15vh;
+  height: 20vh;
+}
+.container-info-under {
+  display: flex;
+  align-self: center;
+  margin-left: 10%;
+}
+.container-info-input {
+  align-self: center;
+  margin: 1vh 2vh 1vh 2vh;
+  background-color: white;
+  height: 4vh;
+  width: 90%;
+}
+.container-info-input-under-one {
+  border-radius: 10px;
+  margin-left: -9%;
+  align-self: center;
+  background-color: white;
+  width: 45%;
+  height: 5vh;
+}
+.container-info-input-under-two {
+  border-radius: 10px;
+  margin-left: 0%;
+  align-self: center;
+  background-color: white;
+  width: 55%;
+  height: 5vh;
+}
+.container-text {
+  display: flex;
+}
+.text-title-three {
+  margin-left: 40%;
+  color: white;
+}
+.text-under-title-three {
+  margin-left: 15%;
+  margin-right: 19%;
+  color: white;
+}
+.container-info-bottom{
+  padding-left: 15%;
+  display: flex;
+  text-align: center;
+}
+.container-info-text {
+  margin-right: 20%;
+  display: inline-block;
+  color: white;
+}
+
+/*--------------1230PX-------------------------*/
+@media only screen and (max-width: 1230px) {
+  .text-title-two {
+    font-size: 70px;
+    padding: 1% 2% 1% 10%;
+  }
+  .input {
+    margin: 0px;
+    border-radius: 10px;
+    border-width: 0px;
+    padding: 30px;
+    font-size: 40px;
+  }
+  .input-text {
+    color: white;
+  }
+  .text-under-title-three {
+    color: whitesmoke;
+  }
+}
+/*----------------1000px--------------------------*/
+@media only screen and (max-width: 1000px) {
+  .text-title-two {
+    font-size: 50px;
+    padding: 5% 2% 1% 14%;
+  }
+  .input {
+    width: 100px;
+    margin: 0px;
+    border-radius: 10px;
+    border-width: 0px;
+    padding: 30px;
+    font-size: 50px;
+  }
+  .text-under-title-three {
+    color: whitesmoke;
+  }
+}
+/*---------------750PX--------------------------*/
+@media only screen and (max-width: 750px) {
+  .content {
+    flex-direction: row;
+    justify-content: center;
+    padding: 2em;
+    max-height: none; /* override the max-height */
+    height: 10vh; /* set a specific height for smaller screens */
+  }
+  .circle {
+    width: 6%;
+    height: 50%;
+  }
+  .barra {
+    margin-left: 0px;
+    font-size: 10px;
+  }
+  .text {
+    text-decoration: underline;
+    margin: 6px;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+  }
+
+  .text-title {
+    margin: 1em;
+    font-size: 20px;
+  }
+  .text-title-two {
+    padding: 5% 0% 1% 0%;
+    margin-right: 0px;
+    font-size: 45px;
+  }
+  .text-under-title {
+    flex-direction: column;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+  .content-front {
+    top: 38%;
+  }
+  .first-input {
+    height: 30vh;
+    margin-left: 10%;
+    margin-right: 15%;
+    padding: 10px;
+    display: flow-root;
+    align-items: center;
+  }
+  .input {
+    width: 75%;
+    margin-left: 5%;
+    border-radius: 10px;
+    border-width: 0px;
+    padding: 30px;
+    font-size: 20px;
+  }
+  .input-text {
+    margin-top: 0%;
+    margin-right: 0%;
+    width: 100%;
+    height: 10%;
+    padding-right: 0px;
+    padding-left: 10vh;
+    color: white;
+    font-size: 30px;
+  }
+  .text-under-title-three {
+    color: red;
+  }
+}
+/*----------------500px---------------------------*/
+/*
+
+@media only screen and (max-width: 500px) {
+  .content {
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+    max-height: none; /* override the max-height 
+    height: 50vh; /* set a specific height for smaller screens 
+  }
+
+  .circle {
+    margin-right: 1em;
+    height: 18%;
+  }
+
+  .text-title {
+    margin: 1em;
+  }
+}
+
+*/
