@@ -4,46 +4,108 @@
   text-align: center;
 }
 */
+@media(max-width: 800px) {
+  .primer-titulo {
+    position: absolute;
+    top: 30%; /* ajustar la posición vertical */
+    left: 50%; /* ajustar la posición horizontal */
+    transform: translate(-160%, -50%); /* centrar el elemento */
+    color: rgb(110, 16, 16);
+    display: flex;
+    font-size: 5px;
+    font-weight: bold;
+  }
+
+  .primer-titulo .p {
+    font-weight: 1vh;
+    color: black;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-style: normal;
+    top: 20%;
+    position: absolute;
+  }
+
+  .informacion-pagina {
+    position: absolute;
+    top: 99%; /* ajustar la posición vertical */
+    left: 50%; /* ajustar la posición horizontal */
+    transform: translate(-80%, -50%); /* centrar el elemento */
+    color: rgb(101, 16, 16);
+    display: flex;
+    font-size: 1%;
+    align-items: end;
+    justify-content: left;
+    font-weight: bold;
+    width: 100%;
+  }
+
+  .Logo-movible {
+    height: -5%;
+    position: absolute;
+    top: -5px; /* cambiar valor para mover la imagen hacia arriba o hacia abajo */
+    left: 20px; /* cambiar valor para mover la imagen hacia la izquierda o hacia la derecha */
+    z-index: 5; /* establecer una z-index más alta para que la imagen aparezca encima del fondo */
+  }
+
+  .rectangle-container {
+    top: 75vh;
+    height: 44%;
+    line-height: 100px;
+    bottom: 5%;
+    margin-left: 10%;
+    margin-right: 3%;
+    font-size: 24px;
+    background-color: rgba(142, 163, 26, 0.972);
+    position: absolute;
+    z-index: 2;
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* agregar para permitir el ajuste de los elementos en una sola fila */
+  }
+}
+
 body {
+  box-sizing: border-box;
   margin: 0;
-  background: linear-gradient(to left, #000000, #000000);
-  background-color: black;
 }
 
 .rectangulo {
-  left: 20px; /* añadir un margen izquierdo */
-  width: calc(
+  left: 20px;
+  /* width: calc(
     100% - 40px
-  ); /* ajustar el ancho para evitar que el rectángulo se salga del borde derecho de la ventana */
+  );  */
   height: 70px;
   background-color: rgb(0, 0, 0);
   z-index: 3;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-end; /* alinear los elementos hacia la derecha */
 }
 
 .rectangulo-negro {
-  position: relative;
   width: 100%;
-  height: 120px;
-  background-color: rgba(0, 0, 0, 0.822);
+  height: 30vh;
+  background-color: rgb(0, 0, 0);
   display: flex;
+
   align-items: center;
   justify-content: center; /* alinear los elementos hacia la derecha */
-  padding: 0 20px;
 }
 
 .boton-gris {
+  display: flex;
   background-color: rgb(95, 95, 95);
   color: rgb(255, 255, 255);
   border: none;
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 18px;
-  margin: 0 20px;
-  width: 11%;
+  margin: 0 40px;
+  width: 70%;
+  height: -2%;
 }
 
 .boton-blanco {
@@ -77,37 +139,84 @@ body {
   width: 20%;
 }
 
-
-
-.mi-clase {
+.mi-fondo {
   width: 100%;
   height: 100%;
-  position: relative;
 }
 
-.mi-clase img {
+.primer-titulo {
+  position: absolute;
+  top: 30%; /* ajustar la posición vertical */
+  left: 50%; /* ajustar la posición horizontal */
+  transform: translate(-160%, -50%); /* centrar el elemento */
+  color: white;
+  display: flex;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.informacion-pagina {
+  position: absolute;
+  top: 39%; /* ajustar la posición vertical */
+  left: 50%; /* ajustar la posición horizontal */
+  transform: translate(-80%, -50%); /* centrar el elemento */
+  color: white;
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.Logo-movible {
+  height: 30%;
+  position: absolute;
+  top: -5px; /* cambiar valor para mover la imagen hacia arriba o hacia abajo */
+  left: 20px; /* cambiar valor para mover la imagen hacia la izquierda o hacia la derecha */
+  z-index: 5; /* establecer una z-index más alta para que la imagen aparezca encima del fondo */
+}
+
+.boton-movible {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-350%, -50%);
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  /* cursor: move; */
+}
+
+/* .mi-clase {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+} */
+
+/* .mi-clase img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+} */
 
-.mi-clase .elemento-absoluto {
+/* .mi-clase .elemento-absoluto {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
-  /* Agrega aquí cualquier otra propiedad que necesites para posicionar el elemento */
-}
 
-.mi-clase .rectangle-container {
+} */
+
+.rectangle-container {
+  top: 75vh;
+  height: 44%;
   line-height: 100px;
-  top: 60%;
   bottom: 5%;
-  margin-left: 3%;
+  margin-left: 10%;
   margin-right: 3%;
   font-size: 24px;
   background-color: rgba(253, 253, 253, 0.972);
-  position: relative;
+  position: absolute;
   z-index: 2;
   border: 1px solid black;
   padding: 20px;
@@ -133,7 +242,7 @@ body {
   display: inline-block;
   width: 80%;
   vertical-align: middle;
-  margin: 0; /* Agregar estilo de margin */
+  margin: 0;
 }
 
 .image-wrapper img {
