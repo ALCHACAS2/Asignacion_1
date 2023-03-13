@@ -198,10 +198,10 @@ body {
 }
 
 .Logo-movible {
-  height: 30%;
+  height: 23%;
   position: absolute;
-  top: -5px;
-  left: 20px;
+  top: 10px;
+  left: px;
   z-index: 5;
 }
 
@@ -239,8 +239,8 @@ body {
 
 .rectangle-container {
   opacity: 80%;
-  top: 80vh;
-  height: 44%;
+  top: 75vh;
+  height: 49%;
   line-height: 100px;
   bottom: 5%;
   margin-left: 10%;
