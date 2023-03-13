@@ -131,6 +131,9 @@ body {
 .boton-ingresar:active {
   animation: animacion 0.5s ease-out;
 }
+.boton-carrito:active {
+  animation: animacion 0.5s ease-out;
+}
 
 
 @keyframes animacion {
