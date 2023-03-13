@@ -246,7 +246,11 @@ body {
 }
 
 .image-wrapper img {
-  width: 100%;
+  width: 98%;
+}
+
+.image-wrapper-margarita img {
+  width: 80%;
 }
 
 .boton-naranja {
