@@ -4,12 +4,12 @@
   text-align: center;
 }
 */
-@media(max-width: 800px) {
+/* @media(max-width: 800px) {
   .primer-titulo {
     position: absolute;
-    top: 30%; /* ajustar la posición vertical */
-    left: 50%; /* ajustar la posición horizontal */
-    transform: translate(-160%, -50%); /* centrar el elemento */
+    top: 30%;
+    left: 50%;
+    transform: translate(-160%, -50%);
     color: rgb(110, 16, 16);
     display: flex;
     font-size: 5px;
@@ -27,9 +27,9 @@
 
   .informacion-pagina {
     position: absolute;
-    top: 99%; /* ajustar la posición vertical */
-    left: 50%; /* ajustar la posición horizontal */
-    transform: translate(-80%, -50%); /* centrar el elemento */
+    top: 99%;
+    left: 50%;
+    transform: translate(-80%, -50%);
     color: rgb(101, 16, 16);
     display: flex;
     font-size: 1%;
@@ -42,12 +42,13 @@
   .Logo-movible {
     height: -5%;
     position: absolute;
-    top: -5px; /* cambiar valor para mover la imagen hacia arriba o hacia abajo */
-    left: 20px; /* cambiar valor para mover la imagen hacia la izquierda o hacia la derecha */
-    z-index: 5; /* establecer una z-index más alta para que la imagen aparezca encima del fondo */
+    top: -5px;
+    left: 20px;
+    z-index: 5;
   }
 
   .rectangle-container {
+    opacity: 20%;
     top: 75vh;
     height: 44%;
     line-height: 100px;
@@ -63,9 +64,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap; /* agregar para permitir el ajuste de los elementos en una sola fila */
+    flex-wrap: wrap;
   }
-}
+} */
 
 body {
   box-sizing: border-box;
@@ -82,30 +83,30 @@ body {
   z-index: 3;
   display: flex;
   align-items: center;
-  justify-content: flex-end; /* alinear los elementos hacia la derecha */
+  justify-content: flex-end;
 }
 
 .rectangulo-negro {
   width: 100%;
-  height: 30vh;
+  height: 42vh;
   background-color: rgb(0, 0, 0);
   display: flex;
-
   align-items: center;
-  justify-content: center; /* alinear los elementos hacia la derecha */
+  justify-content: center;
 }
 
 .boton-gris {
   display: flex;
   background-color: rgb(95, 95, 95);
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   border: none;
   padding: 5px 10px;
   border-radius: 5px;
+  justify-content: center;
   font-size: 18px;
-  margin: 0 40px;
-  width: 70%;
-  height: -2%;
+  margin: 0 20px;
+  width: 10%;
+  height: -10%;
 }
 
 .boton-blanco {
@@ -115,7 +116,7 @@ body {
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 18px;
-  margin-right: 10px; /* añadir un margen derecho */
+  margin-right: 10px;
 }
 
 .boton-carrito {
@@ -141,14 +142,15 @@ body {
 
 .mi-fondo {
   width: 100%;
-  height: 100%;
+  height: 110%;
+  margin-bottom: -1%;
 }
 
 .primer-titulo {
   position: absolute;
-  top: 30%; /* ajustar la posición vertical */
-  left: 50%; /* ajustar la posición horizontal */
-  transform: translate(-160%, -50%); /* centrar el elemento */
+  top: 30%;
+  left: 50%;
+  transform: translate(-160%, -50%);
   color: white;
   display: flex;
   font-size: 50px;
@@ -157,9 +159,9 @@ body {
 
 .informacion-pagina {
   position: absolute;
-  top: 39%; /* ajustar la posición vertical */
-  left: 50%; /* ajustar la posición horizontal */
-  transform: translate(-80%, -50%); /* centrar el elemento */
+  top: 39%;
+  left: 50%;
+  transform: translate(-80%, -50%);
   color: white;
   display: flex;
   font-size: 20px;
@@ -169,9 +171,9 @@ body {
 .Logo-movible {
   height: 30%;
   position: absolute;
-  top: -5px; /* cambiar valor para mover la imagen hacia arriba o hacia abajo */
-  left: 20px; /* cambiar valor para mover la imagen hacia la izquierda o hacia la derecha */
-  z-index: 5; /* establecer una z-index más alta para que la imagen aparezca encima del fondo */
+  top: -5px;
+  left: 20px;
+  z-index: 5;
 }
 
 .boton-movible {
@@ -188,27 +190,10 @@ body {
   /* cursor: move; */
 }
 
-/* .mi-clase {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-} */
-
-/* .mi-clase img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
-
-/* .mi-clase .elemento-absoluto {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-} */
 
 .rectangle-container {
-  top: 75vh;
+  opacity: 80%;
+  top: 80vh;
   height: 44%;
   line-height: 100px;
   bottom: 5%;
@@ -223,7 +208,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap; /* agregar para permitir el ajuste de los elementos en una sola fila */
+  flex-wrap: wrap;
 }
 
 .image-container {
@@ -234,7 +219,7 @@ body {
   width: 33.33%;
   text-align: center;
   margin-top: 5px;
-  margin: 0; /* Agregar estilo de margin */
+  margin: 0;
   line-height: 50px;
 }
 
@@ -246,22 +231,28 @@ body {
 }
 
 .image-wrapper img {
-  width: 98%;
+  width: 80%;
 }
 
 .image-wrapper-margarita img {
-  width: 80%;
+  width: 65%;
+}
+.image-wrappe-martini img {
+  width: 90%;
+}
+.image-wrapper-pinacolada img {
+  width: 65%;
 }
 
 .boton-naranja {
   background-color: rgb(221, 159, 42);
   color: white;
   border: none;
-  padding: 5px 20px; /* Reducir valor de padding */
+  padding: 5px 50px;
   border-radius: 5px;
   font-size: 18px;
-  margin-top: 1px;
-  width: 80%;
+  margin-top: -15px;
+  width: 100%;
   vertical-align: middle;
 }
 
@@ -276,181 +267,23 @@ body {
   margin-bottom: 1px;
 }
 
-/*
-
-
-
-.imagen-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80vh;
-}
-
-.imagen {
-  max-width: 100%;
-  max-height: 80%;
-  margin: 20px auto;
+.image-label {
+  opacity: 80%;
   display: block;
-}
-.boton-container {
+  margin-top: -20px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(202, 110, 4);
+  font-size: 20px;
+  padding: 2px 5px;
+  border-radius: 5px;
   text-align: center;
 }
 
-.boton {
-  background-color: #5a9e9b;
-  border: 2px solid black;
-  color: black;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 5px;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
 
-.boton:hover {
-  background-color: #3a6664;
-  border-color: black;
-  transform: rotate(-5deg);
-  animation: tambaleo 0.5s ease-in-out infinite;
-}
-
-@keyframes tambaleo {
-  0% {
-    transform: rotate(-5deg);
-  }
-  50% {
-    transform: rotate(5deg);
-  }
-  100% {
-    transform: rotate(-5deg);
-  }
-}
-/*-----------------------Login---------------------
-/* Estilo para el formulario
-form {
-  max-width: 450px;
-  margin: 0 auto;
-  margin-top: 50;
-  padding: 50px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0px 0px 1px #ee0606;
-}
-
-/* Estilo para las etiquetas de los campos
-label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-/* Estilo para los campos
-input[type="text"],
-input[type="password"] {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
-/* Estilo para el botón de enviar
-input[type="submit"] {
-  align-self: center;
-  background-color: #4caf50;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-/* Estilo para el botón de enviar al pasar el cursor encima
-input[type="submit"]:hover {
-  background-color: #3e8e41;
-}
-
-/* Estilo para el mensaje de error
-#error {
-  color: red;
-  margin-bottom: 10px;
-}*/
-/*DIV TOP
-#div1,#div2,#div3 {
-  width: 100%;
-}
-#div1 {
-  background-color: #17232f;
-  height: 15vh;
-}
-#div2 {
-  background-color: #ffffff;
-  height: 21vh;
-  display: flex;
-  justify-content: space-between;
-}
-#div3 {
-  background-color: #17232f;
-  height: 64vh;
-}
-#div4 {
-  background-image: linear-gradient(to bottom, #0c0a0f, #48332e);
-  height: 179vh;
-}
-#div5 {
-  background-image: linear-gradient(to bottom, #223a46, #17232f);
-  position: absolute;
-  width: 79%;
-  height: 104%;
-  top: 42%;
-  left: 10%;
-  z-index: 3;
-}
-#div6 {
-  background-color: #ffffff;
-  position: absolute;
-  width: 79%;
-  height: 40%;
-  top: 145%;
-  left: 10%;
-  z-index: 3;
-}
-.contenedor {
-  display: flex;
-  justify-content: center;
-}
-
-.elemento {
-  flex: 1;
-  margin: 0% 10%;
-  align-self: center;
-}
-.Circulo {
-  align-self: center;
-  width: 25vh;
-  height: 20%;
-  background-color: #f28e14;
-  border-radius: 50%;
-}
-.ingreso {
-  background-color: #f28e14;
-  border-color: #f28e14;
-  height: 60%;
-  width: 55vh;
-  align-self: center;
-  right: 20vh;
-  -webkit-text-fill-color: white;
-}
-.titulo{
-  -webkit-text-fill-color: #000000;
-  font-size: 8em;
-  align-self: center;
-  top: 45%;
-}*/
 /*--------------------------------------------------*/
+
+
+
 .container {
   display: flex;
   flex-direction: column;
