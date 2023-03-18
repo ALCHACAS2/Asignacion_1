@@ -67,7 +67,8 @@
     flex-wrap: wrap;
   }
 } */
-
+/* TODO: DELETE all unnecessary comment code */
+/* TODO: Use only english class names */
 body {
   box-sizing: border-box;
   margin: 0;
@@ -325,7 +326,7 @@ body {
   text-align: center;
 }
 
-
+/* TODO: What is the porpoise of this comment? If you need to separate the code, use a new file */
 /*--------------------------------------------------*/
 
 
